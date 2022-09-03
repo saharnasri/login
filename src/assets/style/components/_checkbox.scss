@@ -1,0 +1,43 @@
+.app-checkbox {
+  .v-input--selection-controls__input {
+    display: none;
+  }
+
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .custom-checkbox-border {
+    border: 1px solid var(--v-grayScale4-base) !important;
+  }
+
+  .v-text-field {
+    &__details {
+      display: none !important;
+    }
+  }
+
+  .v-input {
+    &__slot {
+      margin-block: 2px !important;
+    }
+
+    &__control {
+      .v-messages {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.checkbox-with-hint {
+  .v-input__control {
+    .v-messages {
+      display: block !important;
+      margin-top: 6px;
+    }
+  }
+}
+

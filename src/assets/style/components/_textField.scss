@@ -1,0 +1,51 @@
+.custom-text-field{
+  .v-text-field {
+    &.v-input--is-focused {
+      .v-input__slot {
+        border: 1px solid var(--v-primaryDark-base);
+
+        path {
+          stroke: var(--v-primaryDark-base);
+        }
+      }
+    }
+    .v-input__slot {
+      border-radius: 12px !important;
+      border: 1px solid var(--v-grayScale5-base);
+      background: var(--v-grayScale7-base) !important;
+      font-size: 14px !important;
+      &:before,
+      &:after {
+        display: none;
+      }
+      ::placeholder {
+        color: var(--v-grayScale1-base) !important;
+        font-size: 14px;
+      }
+    }
+    .v-label {
+      color: var(--v-grayScale1-base);
+      font-size: 14px;
+    }
+    &.error--text {
+      .v-input__slot {
+        border: 1px solid var(--v-error-base);
+        path {
+          stroke: var(--v-error-base);
+        }
+      }
+      ::placeholder {
+        color: var(--v-error-base) !important;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//hero section
+.search-input {
+  input {
+    font-size: 14px !important;
+  }
+
+}

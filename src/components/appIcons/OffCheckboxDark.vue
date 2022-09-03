@@ -1,0 +1,5 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+    <rect x="0.5" y="1" width="19" height="19" rx="3.5" fill="#122E47" stroke="#95B1CF"/>
+  </svg>
+</template>

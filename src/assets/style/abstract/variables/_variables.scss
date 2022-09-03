@@ -1,0 +1,41 @@
+$font-family: (
+  "regular": 400,
+  "black": 900,
+  "bold": 700,
+  "semibold": 600,
+  "medium": 500,
+  "light": 300,
+  "extraLight": 200,
+);
+$border-radius: (6 8 10 12 16 20);
+$font-size: (
+  "regular": (
+    10,
+    12,
+    14,
+    16,
+    18,
+    24,
+    36,
+  ),
+  "black": (),
+  "bold": (),
+  "semibold": (
+    12,
+    18,
+    36,
+    24,
+  ),
+  "medium": (
+    12,
+    14,
+    16,
+    18,
+    20,
+    24,
+    28,
+    36,
+  ),
+  "light": (),
+  "extraLight": (),
+);

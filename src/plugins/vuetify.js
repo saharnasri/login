@@ -1,0 +1,78 @@
+import Vue from "vue";
+import Vuetify from "vuetify/lib/framework";
+import customIcons from "@/utiles/customIcons";
+
+Vue.use(Vuetify);
+
+export default new Vuetify({
+  icons: {
+    values: customIcons,
+  },
+  theme: {
+    dark: true,
+    options: {
+      customProperties: true,
+    },
+    themes: {
+      light: {
+        primaryLight: "#80ABFF",
+        primary: "#4D88FF",
+        primaryDark: "#3D6DCC",
+        success: "#52CC8F",
+        successBg: "#144245",
+        info: "#4DA6FF",
+        warning: "#E5992E",
+        error: "#E55C73",
+        errorBg: "#322C40",
+        infoBg: "#133B5C",
+        grayScale0: "#FFFFFF",
+        grayScale1: "#CBDFF5",
+        grayScale2: "#95B1CF",
+        grayScale3: "#597491",
+        grayScale4: "#3A5778",
+        grayScale5: "#2A4563",
+        grayScale6: "#13355C",
+        grayScale7: "#122E47",
+        grayScale8: "#052033",
+        grayScale9: "#0C2133",
+        grayScale10: "#11273C",
+        btnColor: "#293143",
+        darkBlue: "#13355c",
+        blackGradient1: "#020306",
+        blackGradient2: "#0b1424",
+        blackGradient3: "#12213c",
+      },
+      dark: {
+        primaryLight: "#80ABFF",
+        primary: "#4D88FF",
+        primaryDark: "#3D6DCC",
+        success: "#52CC8F",
+        info: "#4DA6FF",
+        warning: "#E5992E",
+        error: "#E55C73",
+        errorBg: "#322C40",
+        infoBg: "#133B5C",
+        successBg: "#144245",
+        // infoBg: "rgba(77, 166, 255, 0.2)",
+        // warningBg: "rgba(229, 153, 46, 0.2)",
+        // errorBg: "rgba(229, 92, 115, 0.2)",
+        grayScale0: "#FFFFFF",
+        grayScale1: "#CBDFF5",
+        grayScale2: "#95B1CF",
+        grayScale3: "#597491",
+        grayScale4: "#3A5778",
+        grayScale5: "#2A4563",
+        grayScale6: "#13355C",
+        grayScale7: "#122E47",
+        grayScale8: "#052033",
+        grayScale9: "#0C2133",
+        grayScale10: "#11273C",
+        btnColor: "#112e47",
+        darkBlue: "#13355c",
+        blackGradient1: "#020306",
+        blackGradient2: "#0b1424",
+        blackGradient3: "#12213c",
+      },
+    },
+  },
+});

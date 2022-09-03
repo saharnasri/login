@@ -1,0 +1,11 @@
+.font {
+  @each $name,$weight in $font-family {
+    @each $size in (map-get($font-size , $name)) {
+      &-#{$name}-#{$size} {
+        font-family: Poppins + $name !important;
+        font-size: $size + px !important;
+        font-weight: $weight !important;
+      }
+    }
+  }
+}

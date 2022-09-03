@@ -1,0 +1,45 @@
+.header-class {
+  z-index: 100 !important;
+  .v-btn {
+    &.header-search-btn {
+      border: 1px var(--v-grayScale5-base) solid !important;
+      .v-btn__content {
+        justify-content: start !important;
+      }
+    }
+  }
+}
+
+.v-app-bar.header-class {
+  border-bottom: 1px var(--v-grayScale6-base) solid !important;
+}
+
+.v-dialog:not(.v-dialog--fullscreen) {
+  //max-height: 100%!important;
+}
+.v-dialog__content.overlay-blur {
+}
+.v-dialog__content {
+  //backdrop-filter: blur(8px)!important;
+  //height:100%!important;
+  .overlay-blur {
+    backdrop-filter: blur(8px) !important;
+    height: 100% !important;
+  }
+  .search-bar {
+    position: absolute !important;
+    top: 0 !important;
+    .v-input {
+      &__slot {
+        &::before,
+        &::after {
+          border-style: none !important;
+        }
+      }
+    }
+  }
+}
+
+.header-menu-class {
+  border-radius: 12px !important;
+}
