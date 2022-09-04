@@ -9,14 +9,17 @@ export default new Vuetify({
     values: customIcons,
   },
   theme: {
-    dark: true,
+    // dark: true,
     options: {
       customProperties: true,
     },
     themes: {
       light: {
+        gray0: "#FAFAFA",
+        gray3: "#F5F5F5",
+        gray6: "#333333",
+        primary: "#4C9F87",
         primaryLight: "#80ABFF",
-        primary: "#4D88FF",
         primaryDark: "#3D6DCC",
         success: "#52CC8F",
         successBg: "#144245",
@@ -43,8 +46,11 @@ export default new Vuetify({
         blackGradient3: "#12213c",
       },
       dark: {
+        gray0: "#FAFAFA",
+        gray3: "#F5F5F5",
+        gray6: "#333333",
+        primary: "#4C9F87",
         primaryLight: "#80ABFF",
-        primary: "#4D88FF",
         primaryDark: "#3D6DCC",
         success: "#52CC8F",
         info: "#4DA6FF",
@@ -53,9 +59,6 @@ export default new Vuetify({
         errorBg: "#322C40",
         infoBg: "#133B5C",
         successBg: "#144245",
-        // infoBg: "rgba(77, 166, 255, 0.2)",
-        // warningBg: "rgba(229, 153, 46, 0.2)",
-        // errorBg: "rgba(229, 92, 115, 0.2)",
         grayScale0: "#FFFFFF",
         grayScale1: "#CBDFF5",
         grayScale2: "#95B1CF",
