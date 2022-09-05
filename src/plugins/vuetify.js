@@ -5,6 +5,7 @@ import customIcons from "@/utiles/customIcons";
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  rtl: true,
   icons: {
     values: customIcons,
   },
@@ -19,8 +20,8 @@ export default new Vuetify({
         gray3: "#F5F5F5",
         gray6: "#333333",
         primary: "#4C9F87",
-        primaryLight: "#80ABFF",
-        primaryDark: "#3D6DCC",
+        primaryLight: "#8C9F97",
+        primaryDark: "#5C9F87",
         success: "#52CC8F",
         successBg: "#144245",
         info: "#4DA6FF",
@@ -50,8 +51,8 @@ export default new Vuetify({
         gray3: "#F5F5F5",
         gray6: "#333333",
         primary: "#4C9F87",
-        primaryLight: "#80ABFF",
-        primaryDark: "#3D6DCC",
+        primaryLight: "#8C9F97",
+        primaryDark: "#5C9F87",
         success: "#52CC8F",
         info: "#4DA6FF",
         warning: "#E5992E",

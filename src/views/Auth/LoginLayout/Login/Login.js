@@ -5,14 +5,18 @@ export default {
   data() {
     return {
       valid: false,
+      phoneExample: "۰۹۳۸۸۲۲۴۳۳۵ :مثال",
       form: {
-        email: "",
-        password: "",
+        phoneNumber: "",
       },
       showPassword: false,
       emailRules: [
         (v) => !!v || "E-mail is required",
         (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
+      phoneRules: [
+        (v) => !!v || "فیلد الزامی است.",
+        (v) => /^0[1-9]\d{9}$/g.test(v) || "شماره موبایل معتبر وارد کنید."
       ],
       passwordRules: [
         (v) => !!v || "password is required",
