@@ -1,3 +1,6 @@
+import { authService } from '../../../../services'
+// import { authService } from '@/services'
+
 export default {
   name: "login",
   components: {},
@@ -28,7 +31,13 @@ export default {
   mounted() {},
   methods: {
     submitFrom() {
-      this.$refs.loginForm.validate();
+      if(this.$refs.loginForm.validate()) {
+        authService.checkMobile(this.form.phoneNumber)
+        .then(res => {
+          console.log('res', res.data);
+        })
+
+      }
     },
   },
 };

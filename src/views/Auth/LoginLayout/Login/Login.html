@@ -50,12 +50,12 @@
           height="46"
           :color="hover ? 'primaryDark' :'primary'"
           class="border-radius-12 font-medium-14 mb-5 white--text"
-          to="/panel"
+          @click="submitFrom"
         >
           ادامه
         </v-btn>
       </v-hover>
-      <v-row class="rayScale0--text font-regular-14">
+      <!-- <v-row class="rayScale0--text font-regular-14">
         <v-col class="text-center">
           <span>هنوز ثبت نام نکرده اید؟</span>
           <v-hover v-slot="{ hover }">
@@ -67,7 +67,7 @@
             </router-link>
           </v-hover>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-form>
   </v-row>
 </v-container>
