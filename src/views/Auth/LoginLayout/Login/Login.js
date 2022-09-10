@@ -1,5 +1,4 @@
-import { authService } from '../../../../services'
-// import { authService } from '@/services'
+import { AuthService } from '@/services'
 
 export default {
   name: "login",
@@ -32,7 +31,7 @@ export default {
   methods: {
     submitFrom() {
       if(this.$refs.loginForm.validate()) {
-        authService.checkMobile(this.form.phoneNumber)
+        AuthService.checkMobile(this.form.phoneNumber)
         .then(res => {
           console.log('res', res.data);
         })
