@@ -1,7 +1,7 @@
 import TransitionPage from "@/components/TransitionPage";
 
 export default {
-  name: "auth",
+  name: "auth-layout",
   components: { TransitionPage },
   props: [],
   data() {

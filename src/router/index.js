@@ -10,10 +10,19 @@ const routes = [
   },
   {
     path: "/auth",
-    redirect: "/auth/login",
+    // redirect: "/auth/login",
     meta: { transitionName: "slide" },
     component: () => import(/* webpackChunkName: "auth" */ "@/views/Auth"),
     children: [
+      {
+        path: "/",
+        name: "check-mobile",
+        meta: { transitionName: "slide" },
+        component: () => 
+          import(
+            /* webpackChunkName: "check-mobile" */ "@/views/Auth/CheckMobile"
+          ),
+      },
       {
         path: "login",
         name: "login-layout",

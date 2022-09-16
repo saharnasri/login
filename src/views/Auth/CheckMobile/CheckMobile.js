@@ -1,7 +1,7 @@
 import { AuthService } from "@/services";
 
 export default {
-  name: "login",
+  name: "check-mobile",
   components: {},
   props: [],
   data() {
@@ -9,7 +9,7 @@ export default {
       valid: false,
       phoneExample: "۰۹۳۸۸۲۲۴۳۳۵ :مثال",
       form: {
-        password: "",
+        phoneNumber: "",
       },
       showPassword: false,
       emailRules: [
@@ -21,7 +21,7 @@ export default {
         (v) => /^0[1-9]\d{9}$/g.test(v) || "شماره موبایل معتبر وارد کنید.",
       ],
       passwordRules: [
-        (v) => !!v || "فیلد الزامی است.",
+        (v) => !!v || "password is required",
         (v) => v.length >= 8 || "Min 8 characters",
       ],
     };
@@ -30,9 +30,16 @@ export default {
   mounted() {},
   methods: {
     submitFrom() {
-      if (this.$refs.loginForm.validate()) {
+      if (this.$refs.checkMobileForm.validate()) {
         AuthService.checkMobile(this.form.phoneNumber).then((res) => {
           console.log("res", res.data);
+          if(res.data.status === 0) {
+            this.$router.push("/auth/login");
+          } else if ( res.data.status === 1) {
+            console.log('send otp');
+          } else {
+            console.log('wrong no');
+          }
         });
       }
     },
